@@ -93,4 +93,4 @@ light_size = 0.098
 omni_range = 15.0
 
 [node name="PowerGeneratorFixed3" parent="." instance=ExtResource("2_ul4ym")]
-transform = Transform3D(0.774735, 0, -0.632286, 0, 1, 0, 0.632286, 0, 0.774735, -2.0106, 1.90464, -1.53064)
+transform = Transform3D(0.774735, 0, -0.632286, 0, 1, 0, 0.632286, 0, 0.774735, -5.90617, 1.90464, -1.53064)

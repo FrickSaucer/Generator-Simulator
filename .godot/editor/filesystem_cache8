@@ -1,19 +1,19 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700483833
-icon.svg::CompressedTexture2D::4601713198643163242::1700470534::1700470546::1::::<><>::
-::res://Asset Scenes/::1700475325
-player.tscn::PackedScene::7000251253794734441::1700475325::0::1::::<><>::res://Scripts/CharacterBody3D.gd
-power_generator_fixed_3.tscn::PackedScene::6722716231848962678::1700475325::0::1::::<><>::uid://cavw8jpjxf2ts::::res://Models/T1Gen/PowerGeneratorFixed3.fbx<>uid://ck06lhjfiicb8::::res://Models/T1Gen/textures/PowerGeneratorBandUVFix_LeatherBandScrolli.png<>uid://ctqbchtoquc3s::::res://Models/T1Gen/textures/PowerGeneratorBandUVFix_SteamEngineMat_Bas.png
-::res://Models/::1700474270
-::res://Models/T1Gen/::1700474487
-PowerGeneratorFixed3.fbx::PackedScene::4817588501583281660::1650135556::1700474487::1::::<><>::
-::res://Models/T1Gen/textures/::1700474642
-PowerGeneratorBandUVFix_LeatherBandScrolli.png::CompressedTexture2D::5528241499931609963::1650135556::1700474627::1::::<><>::
-PowerGeneratorBandUVFix_SteamEngineMat_Bas.png::CompressedTexture2D::6139524126827351666::1650135556::1700474642::1::::<><>::
-PowerGeneratorBandUVFix_SteamEngineMat_Nor.png::CompressedTexture2D::603029062361823345::1650135558::1700474621::1::::<><>::
-PowerGeneratorBandUVFix_SteamEngineMat_Rou.png::CompressedTexture2D::6924507511581641810::1650135556::1700474482::1::::<><>::
-SteamEngineMat_AO.png::CompressedTexture2D::3746913633428186310::1650135556::1700474605::1::::<><>::
-::res://Scenes/::1700475567
-test_scene.tscn::PackedScene::3256775618802517114::1700475567::0::1::::<><>::uid://c6y8d6nx3ixwb::::res://Asset Scenes/player.tscn<>uid://c21sfighm8cf3::::res://Asset Scenes/power_generator_fixed_3.tscn
-::res://Scripts/::1700472707
-CharacterBody3D.gd::GDScript::-1::1700472707::0::1::::<>CharacterBody3D<>::
+::res://::1700484449
+icon.svg::CompressedTexture2D::4601713198643163242::1700484392::1700484450::1::::<><>::
+::res://Asset Scenes/::1700484392
+player.tscn::PackedScene::7000251253794734441::1700484392::0::1::::<><>::res://Scripts/CharacterBody3D.gd
+power_generator_fixed_3.tscn::PackedScene::6722716231848962678::1700484392::0::1::::<><>::uid://cavw8jpjxf2ts::::res://Models/T1Gen/PowerGeneratorFixed3.fbx<>uid://ck06lhjfiicb8::::res://Models/T1Gen/textures/PowerGeneratorBandUVFix_LeatherBandScrolli.png<>uid://ctqbchtoquc3s::::res://Models/T1Gen/textures/PowerGeneratorBandUVFix_SteamEngineMat_Bas.png
+::res://Models/::1700484392
+::res://Models/T1Gen/::1700484392
+PowerGeneratorFixed3.fbx::PackedScene::4817588501583281660::1700484392::1700484392::1::::<><>::
+::res://Models/T1Gen/textures/::1700484392
+PowerGeneratorBandUVFix_LeatherBandScrolli.png::CompressedTexture2D::5528241499931609963::1700484392::1700484392::1::::<><>::
+PowerGeneratorBandUVFix_SteamEngineMat_Bas.png::CompressedTexture2D::6139524126827351666::1700484392::1700484392::1::::<><>::
+PowerGeneratorBandUVFix_SteamEngineMat_Nor.png::CompressedTexture2D::603029062361823345::1700484392::1700484392::1::::<><>::
+PowerGeneratorBandUVFix_SteamEngineMat_Rou.png::CompressedTexture2D::6924507511581641810::1700484392::1700484392::1::::<><>::
+SteamEngineMat_AO.png::CompressedTexture2D::3746913633428186310::1700484392::1700484392::1::::<><>::
+::res://Scenes/::1700484392
+test_scene.tscn::PackedScene::3256775618802517114::1700484392::0::1::::<><>::uid://c6y8d6nx3ixwb::::res://Asset Scenes/player.tscn<>uid://c21sfighm8cf3::::res://Asset Scenes/power_generator_fixed_3.tscn
+::res://Scripts/::1700484392
+CharacterBody3D.gd::GDScript::-1::1700484392::0::1::::<>CharacterBody3D<>::

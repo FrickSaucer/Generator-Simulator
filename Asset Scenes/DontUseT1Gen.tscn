@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://weqt8l3uemrg"]
+
+[ext_resource type="PackedScene" uid="uid://c4ifs14wwsk25" path="res://Models/T1Gen/T1GenBlenderd.glb" id="1_y382t"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="T1GenBlenderd" parent="." instance=ExtResource("1_y382t")]

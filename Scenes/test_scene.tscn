@@ -27,7 +27,7 @@ albedo_color = Color(0.505882, 0.34902, 0, 1)
 [node name="TestScene" type="Node3D"]
 
 [node name="Player" parent="." instance=ExtResource("1_wsv2q")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 5.06353)
 
 [node name="Meshes" type="Node3D" parent="."]
 
@@ -54,7 +54,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_71bel")
 shape = SubResource("ConcavePolygonShape3D_4orms")
 
 [node name="Wall3" type="MeshInstance3D" parent="Meshes"]
-transform = Transform3D(3.93403e-07, 9, 7.86805e-07, -9, 3.93403e-07, 7.86805e-07, 7.86805e-07, -7.86805e-07, 9, -9.01256, 0, 0.0584311)
+transform = Transform3D(3.93403e-07, 9, 7.86805e-07, -9, 3.93403e-07, 7.86805e-07, 7.86805e-07, -7.86805e-07, 9, -8.5031, 0, 0.0584311)
 mesh = SubResource("PlaneMesh_ph4jo")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_yofvm")
@@ -93,4 +93,4 @@ light_size = 0.098
 omni_range = 15.0
 
 [node name="PowerGeneratorFixed3" parent="." instance=ExtResource("2_ul4ym")]
-transform = Transform3D(0.774735, 0, -0.632286, 0, 1, 0, 0.632286, 0, 0.774735, -2.3854, 1.90464, -1.53064)
+transform = Transform3D(0.774735, 0, -0.632286, 0, 1, 0, 0.632286, 0, 0.774735, -2.0106, 1.90464, -1.53064)

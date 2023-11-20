@@ -1,0 +1,96 @@
+[gd_scene load_steps=10 format=3 uid="uid://bmnuvbejis371"]
+
+[ext_resource type="PackedScene" uid="uid://c6y8d6nx3ixwb" path="res://Asset Scenes/player.tscn" id="1_wsv2q"]
+[ext_resource type="PackedScene" uid="uid://c21sfighm8cf3" path="res://Asset Scenes/power_generator_fixed_3.tscn" id="2_ul4ym"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ph4jo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qr40q"]
+albedo_color = Color(1, 0.12549, 1, 1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_4orms"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_71bel"]
+albedo_color = Color(0, 0, 1, 1)
+metallic = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yofvm"]
+albedo_color = Color(0.988235, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dvyrg"]
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xpxy6"]
+albedo_color = Color(0.505882, 0.34902, 0, 1)
+
+[node name="TestScene" type="Node3D"]
+
+[node name="Player" parent="." instance=ExtResource("1_wsv2q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Meshes" type="Node3D" parent="."]
+
+[node name="Wall" type="MeshInstance3D" parent="Meshes"]
+transform = Transform3D(9, 0, 0, 0, -3.93403e-07, -9, 0, 9, -3.93403e-07, 0, 0, -8.92745)
+mesh = SubResource("PlaneMesh_ph4jo")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_qr40q")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Meshes/Wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Meshes/Wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_4orms")
+
+[node name="Wall2" type="MeshInstance3D" parent="Meshes"]
+transform = Transform3D(-9, -7.86805e-07, 3.43923e-14, 0, -3.93403e-07, -9, 7.86805e-07, -9, 3.93403e-07, 0, 0, 9.03543)
+mesh = SubResource("PlaneMesh_ph4jo")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_71bel")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Meshes/Wall2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Meshes/Wall2/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_4orms")
+
+[node name="Wall3" type="MeshInstance3D" parent="Meshes"]
+transform = Transform3D(3.93403e-07, 9, 7.86805e-07, -9, 3.93403e-07, 7.86805e-07, 7.86805e-07, -7.86805e-07, 9, -9.01256, 0, 0.0584311)
+mesh = SubResource("PlaneMesh_ph4jo")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_yofvm")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Meshes/Wall3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Meshes/Wall3/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_4orms")
+
+[node name="Wall4" type="MeshInstance3D" parent="Meshes"]
+transform = Transform3D(-3.93403e-07, -9, 0, -3.93403e-07, 1.71962e-14, -9, 9, -3.93403e-07, -3.93403e-07, 8.9877, 0, 0.0697351)
+mesh = SubResource("PlaneMesh_ph4jo")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvyrg")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Meshes/Wall4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Meshes/Wall4/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_4orms")
+
+[node name="Floor" type="MeshInstance3D" parent="Meshes"]
+transform = Transform3D(9, 0, 0, 0, 9, 0, 0, 0, 9, 0, 0, 0)
+mesh = SubResource("PlaneMesh_ph4jo")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xpxy6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Meshes/Floor"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Meshes/Floor/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_4orms")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.3952, 0)
+light_energy = 12.0
+light_size = 0.098
+omni_range = 15.0
+
+[node name="PowerGeneratorFixed3" parent="." instance=ExtResource("2_ul4ym")]
+transform = Transform3D(0.774735, 0, -0.632286, 0, 1, 0, 0.632286, 0, 0.774735, -2.3854, 1.90464, -1.53064)

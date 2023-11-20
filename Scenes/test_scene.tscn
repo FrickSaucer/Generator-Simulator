@@ -27,7 +27,7 @@ albedo_color = Color(0.505882, 0.34902, 0, 1)
 [node name="TestScene" type="Node3D"]
 
 [node name="Player" parent="." instance=ExtResource("1_wsv2q")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 5.06353)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 7.69281)
 
 [node name="Meshes" type="Node3D" parent="."]
 

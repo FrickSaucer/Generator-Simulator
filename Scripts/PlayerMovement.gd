@@ -26,7 +26,6 @@ func _physics_process(delta):
 
 	move_and_slide()
 
-
 func _unhandled_input(event) -> void:
 	
 	if event is InputEventMouseButton:

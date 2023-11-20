@@ -4,5 +4,8 @@
 
 [node name="T1GenBlenderd" instance=ExtResource("1_2e4ls")]
 
+[node name="OvenDoor_001_SteamEngineMat_001_0_002" parent="Sketchfab_model/1741141505334553b6afa8519f08c917_fbx/RootNode/OvenDoor_001" index="2"]
+visible = false
+
 [node name="Cube" parent="." index="1"]
 transform = Transform3D(1.0001, 0, 0, 0, 1.00001, -0.0021101, 0, 0.00191988, 1.09909, -78.5915, -75.8469, 0)

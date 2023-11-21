@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://dt8sxbvshj0d1"]
+[gd_scene load_steps=3 format=3 uid="uid://dt8sxbvshj0d1"]
 
 [ext_resource type="PackedScene" uid="uid://c4ifs14wwsk25" path="res://Models/T1Gen/T1GenBlenderd.glb" id="1_2e4ls"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_utqg8"]
+size = Vector3(117.563, 141.536, 174.619)
 
 [node name="T1GenBlenderd" instance=ExtResource("1_2e4ls")]
 
@@ -9,3 +12,9 @@ visible = false
 
 [node name="Cube" parent="." index="1"]
 transform = Transform3D(1.0001, 0, 0, 0, 1.00001, -0.0021101, 0, 0.00191988, 1.09909, -78.5915, -75.8469, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -73.812, -103.781, 47.7391)
+shape = SubResource("BoxShape3D_utqg8")

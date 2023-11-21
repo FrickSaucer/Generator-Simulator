@@ -1,1 +1,4 @@
 res://Scenes/test_scene.tscn
+res://Asset Scenes/PlayerFunctionality.gd
+res://Asset Scenes/player.tscn
+res://Asset Scenes/player.gd

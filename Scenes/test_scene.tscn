@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://bmnuvbejis371"]
+[gd_scene load_steps=12 format=3 uid="uid://bmnuvbejis371"]
 
 [ext_resource type="PackedScene" uid="uid://c6y8d6nx3ixwb" path="res://Asset Scenes/player.tscn" id="1_wsv2q"]
+[ext_resource type="Script" path="res://Asset Scenes/PlayerFunctionality.gd" id="2_rh6e8"]
 [ext_resource type="PackedScene" uid="uid://dt8sxbvshj0d1" path="res://Asset Scenes/T1Gen.tscn" id="2_rrqxf"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_ph4jo"]
@@ -31,6 +32,7 @@ size = Vector3(0.668427, 2.21751, 1.75559)
 
 [node name="Player" parent="." instance=ExtResource("1_wsv2q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.76707, 1.82219, 4.14212)
+script = ExtResource("2_rh6e8")
 
 [node name="Meshes" type="Node3D" parent="."]
 

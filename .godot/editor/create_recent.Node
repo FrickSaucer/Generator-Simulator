@@ -1,6 +1,7 @@
+CollisionShape3D
+Area3D
 Node3D
 StaticBody3D
-CollisionShape3D
 StaticBody3D
 OmniLight3D
 Camera3D

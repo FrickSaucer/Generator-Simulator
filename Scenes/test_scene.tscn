@@ -1,25 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://bmnuvbejis371"]
+[gd_scene load_steps=11 format=3 uid="uid://bmnuvbejis371"]
 
 [ext_resource type="PackedScene" uid="uid://c6y8d6nx3ixwb" path="res://Asset Scenes/player.tscn" id="1_wsv2q"]
 [ext_resource type="PackedScene" uid="uid://dt8sxbvshj0d1" path="res://Asset Scenes/T1Gen.tscn" id="2_rrqxf"]
-
-[sub_resource type="GDScript" id="GDScript_rr0om"]
-script/source = "extends Node3D
-
-const RAY_LENGTH = 1000
-
-func _physics_process(delta):
-	var space_state = get_world_3d().direct_space_state
-	var cam = $Camera3D
-	var mousepos = get_viewport().get_mouse_position()
-
-	var origin = cam.project_ray_origin(mousepos)
-	var end = origin + cam.project_ray_normal(mousepos) * RAY_LENGTH
-	var query = PhysicsRayQueryParameters3D.create(origin, end)
-	query.collide_with_areas = true
-
-	var result = space_state.intersect_ray(query)
-"
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_ph4jo"]
 
@@ -46,10 +28,6 @@ albedo_color = Color(0.505882, 0.34902, 0, 1)
 size = Vector3(0.668427, 2.21751, 1.75559)
 
 [node name="TestScene" type="Node3D"]
-
-[node name="Player" parent="." instance=ExtResource("1_wsv2q")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.76707, 1.82219, 4.14212)
-script = SubResource("GDScript_rr0om")
 
 [node name="Meshes" type="Node3D" parent="."]
 
@@ -125,3 +103,6 @@ transform = Transform3D(0.892389, 0, -0.451267, 0, 1, 0, 0.451267, 0, 0.892389, 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AreaNodes/Crank"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.06473, 0)
 shape = SubResource("BoxShape3D_13cgk")
+
+[node name="Player" parent="." instance=ExtResource("1_wsv2q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.513904, 1.33398, 5.36376)

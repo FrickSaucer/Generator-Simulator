@@ -1,11 +1,10 @@
 extends Node3D
 
-const RAY_LENGTH = 1000
-var Body = $CharacterBody3D
+const RAY_LENGTH = 100
 
 func _physics_process(delta):
 	var space_state = get_world_3d().direct_space_state
-	var cam = $Camera3D
+	var cam = $CharacterBody3D/Neck/Camera3D
 	var mousepos = get_viewport().get_mouse_position()
 
 	var origin = cam.project_ray_origin(mousepos)
@@ -14,3 +13,4 @@ func _physics_process(delta):
 	query.collide_with_areas = true
 
 	var result = space_state.intersect_ray(query)
+	print(result)

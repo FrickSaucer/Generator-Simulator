@@ -1,4 +1,5 @@
 res://Scenes/test_scene.tscn
-res://Asset Scenes/PlayerFunctionality.gd
 res://Asset Scenes/player.tscn
-res://Asset Scenes/player.gd
+res://Asset Scenes/DontUseT1Gen.tscn
+res://Asset Scenes/T1Gen.tscn
+res://Scripts/player.gd
